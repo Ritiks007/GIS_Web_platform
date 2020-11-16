@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Text Input Control</title>
+      <style> 
+        .tab1 { 
+            display: inline-block; 
+            margin-left: 60px; 
+        } 
+        .tab2 { 
+            display: inline-block; 
+            margin-left: 40px; 
+        } 
+        </style>
+        <meta charset="utf-8" />
+    
+        <script type='text/javascript'
+                src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AjDQQn1yeXuPfTKdGVUSdTtcqoaVrcM-l05l5frbHFBUNH_B1zWW-Kvu110sOYrq' 
+                async defer></script>
+        
+        <script type='text/javascript'>
+        function GetMap()
+        {
+            var map = new Microsoft.Maps.Map('#myMap');
+    
+            //Add your post map load code here.
+        }
+        </script>
+   </head>
+	
+   <body>
+    <div id="myMap" style="position:relative;width:600px;height:400px;"></div>
+       <h1><div class="demobox"><span class="tab1"></span>Query</div></h1><br>
+      <form >
+        <label for="age">Age:<span class="tab1"></span></label>
+        <select id="age" name="age">
+          <option value="10-20">10-20</option>
+          <option value="20-30">20-30</option>
+          <option value="30-40">30-40</option>
+          <option value="40-50">40-50</option>
+          <option value="50-60">50-60</option>
+        </select>
+         <br>
+         <label for="qual">Qualification:</label>
+         <select id="qual" name="Qualification">
+           <option value="jr">Junior(<5th class)</option>
+           <option value="high">High school(6th to 8th)</option>
+           <option value="mt">Matriculation(9th and 10th)</option>
+           <option value="sr">Senior secondary(11th and 12th)</option>
+           <option value="btech">B.TECH</option>
+           <option value="bsc">B.Sc</option>
+         </select><br>
+         <label for="skills">Skills:<span class="tab1"></span></label>
+        <select id="skills" name="skills">
+          <option value="w">Web development</option>
+          
+        </select><br>
+         <label for="wage">Wage:<span class="tab1"></span></label>
+         <input type="text" id="wage" name="wage"><br>
+         <label for="exp">Work Experience(yrs):</span></label>
+        <select id="exp" name="exp">
+          <option value="1-3">1-3</option>
+          <option value="3-5">3-5</option>
+          <option value="5-7">5-7</option>
+          <option value=">7">more than 7</option>
+        </select><br>
+        <label for="sec">Sector of work:</label>
+        <select id="sec" name="sec">
+            <option value="Web">Web</option>
+        </select><br>
+         <button type="button" onclick="alert('submitted')">Submit</button>
+      </form>
+   </body>
+	
+</html>
